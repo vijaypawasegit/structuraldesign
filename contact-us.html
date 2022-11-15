@@ -484,9 +484,14 @@
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 widget-area">
                             <div class="widget newsletter_widget clearfix res-991-padding_top30">
-                                <form id="subscribe-form" class="newsletter-form" method="post" action="#" data-mailchimp="true">
+                                <script type="text/javascript">var submitted=false;</script>
+    
+    <!--Update the URL for thank you page on form submit -->
+    <iframe name="hidden_newsletter" id="hidden_newsletter" style="display:none;"      
+    onload="if(submitted) {window.location='contact-us.html';}"></iframe>
+                                <form id="subscribe-form" class="newsletter-form" method="post" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfIe9XzLELpiDrsN8cQk3N0gIVwIG1e8Bt0eYu5APstTfNmmw/formResponse" data-mailchimp="true" target="hidden_newsletter" onsubmit="submitted=true;">
                                     <div class="mailchimp-inputbox clearfix" id="subscribe-content">
-                                        <p><input type="email" name="email" placeholder="Your Email Address..." required=""></p>
+                                        <p><input type="email" name="entry.516379166" placeholder="Your Email Address..." required=""></p>
                                         <button class="submit ttm-btn ttm-btn-size-md ttm-btn-shape-square ttm-btn-style-fill ttm-btn-color-darkgrey" type="submit">Submit<i class="fa fa-long-arrow-right"></i></button>
                                     </div>
                                     <div id="subscribe-msg"></div>
